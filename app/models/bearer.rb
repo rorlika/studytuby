@@ -1,3 +1,5 @@
 class Bearer < ApplicationRecord
-  validates_uniqueness_of :user_name
+  has_many :stocks
+
+  validates_uniqueness_of :name
 end
